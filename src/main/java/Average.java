@@ -18,6 +18,11 @@ public class Average {
      * @return the average of all the values of nums.
      */
     public double getAvg(int[] nums){
-        return 0;
+        double sum = 0;
+        int size = nums.length;
+        // Reading implies that casting the input int values to a double is the only way implicitly or otherwise
+        // Since variable 'sum' is already a double, the operation is double sum.0 / int size which casts the result to the numerator which is a double
+        for (int i = 0; i < size; i++){ sum += nums[i];}
+        return sum/size;
     }
 }
